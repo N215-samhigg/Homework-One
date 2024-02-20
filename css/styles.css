@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk";
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+:root {
+  --quick-in: cubic-bezier(.25,.5,0,1);
+}
+
+nav {
+  height: 50px;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s var(--quick-in);
+}
+nav a:hover {
+  width: 25vw;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+}
+
+.hero {
+  width: 100vw;
+  height: 500px;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0) 75%), url("https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/extreme-e/hero-banner-arrowmclaren-march6-patooward-1600x900-v2.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.44em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+#carHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(255, 136, 0) 75%), url("https://cloudfront-us-east-2.images.arcpublishing.com/reuters/KBAYBPXU4FO6RFWKH3RTTJCYLQ.jpg");
+  color: #111;
+}
+
+#content {
+  width: 100vw;
+  max-height: fit-content;
+  background-color: #eee;
+  display: flex;
+}
+#content .left-box {
+  width: 48vw;
+  height: 100%;
+  padding: 1vw;
+  display: flex;
+}
+#content .left-box div {
+  width: 25vw;
+}
+#content .right-box {
+  width: 48vw;
+  padding: 1vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#content .right-box div {
+  width: 25vw;
+  display: flex;
+  justify-content: flex-end;
+}
+#content .right-box div img {
+  height: 50vh;
+  width: 100%;
+  aspect-ratio: 1.77;
+  object-fit: cover;
+}
+
+#seasonSec {
+  width: 100vw;
+  background-image: url("https://i.postimg.cc/DwqKkH0F/Season-Back.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+#seasonSec h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.sznRow {
+  width: 80vw;
+  height: 40vh;
+  padding: 5vh;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.race {
+  width: 17.5vw;
+  height: 100%;
+  transform: skewX(180deg);
+  transition: all 1s var(--quick-in);
+  background-color: #f80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.race:hover {
+  transform: skewX(169deg);
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer * {
+  padding-left: 2vw;
+  color: white;
+}
+footer p {
+  height: 1vh;
+}
+footer img {
+  height: 7vh;
+  filter: invert(1);
+}
+
+.carSec {
+  width: 100vw;
+  height: 70vh;
+  padding-bottom: 7.5vh;
+  background-color: #f80;
+  display: flex;
+}
+.carSec div:not(.num) {
+  height: 100%;
+  width: 65vw;
+  padding: 2.5vw;
+}
+.carSec div:not(.num) h2 {
+  font-size: 3em;
+}
+.carSec .num {
+  width: 35vw;
+  height: 100%;
+  font-size: 86.5vh;
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.carSec .phrase {
+  font-style: italic;
+  font-size: 2em;
+}
+.carSec p:not(.phrase) {
+  font-size: 1.5em;
+}
+.carSec .patoNum {
+  background-image: linear-gradient(rgba(17, 17, 17, 0.75) 0%, rgba(17, 17, 17, 0.75) 100%), url("https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQFEiGhuZsB04xHc03mQ8P0W26n0C3or8L9CZgb32fdyW1yaG5-Q7ti06k76Wu_6QkadnewnUWscJiB29M");
+  background-size: 130%;
+  background-position: left;
+  justify-content: flex-start;
+  color: #f80;
+}
+.carSec .patoNum > *::selection {
+  background-color: #f80;
+  color: #111;
+}
+.carSec .davidNum {
+  background-image: linear-gradient(rgba(51, 51, 221, 0.5) 0%, rgba(51, 51, 221, 0.5) 100%), url("https://digbza2f4g9qo.cloudfront.net/-/media/IndyCar/News/Standard/2023/10/10-05-Malukas.jpg?h=564&iar=0&w=940&vs=1&d=20231005T191634Z");
+  background-size: 140%;
+  background-position: right;
+  justify-content: flex-end;
+  color: #fff;
+}
+.carSec .davidNum > *::selection {
+  background-color: #fff;
+  color: #33d;
+}
+.carSec .rossiNum {
+  background-image: linear-gradient(rgba(51, 153, 221, 0.5) 0%, rgba(51, 153, 221, 0.5) 100%), url("https://cdn-3.motorsport.com/images/amp/6gpaX7x0/s6/alexander-rossi-arrow-mclaren-.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+}
+.carSec .rossiNum > *::selection {
+  background-color: #111;
+  color: #39d;
+}
+.carSec .blackCar {
+  background-color: #111;
+  color: #f80;
+}
+.carSec .blueCar {
+  background-color: #33d;
+  color: #fff;
+}
+.carSec .seaCar {
+  background-color: #39d;
+  color: #111;
+}
+
+/*# sourceMappingURL=style.css.map */
