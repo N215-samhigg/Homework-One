@@ -1,0 +1,29 @@
+.hero {
+    width: 100vw;
+    height: 500px;
+
+    background-color: #000;
+    background-image: linear-gradient(rgba(0,0,0,0) 25%, rgba(0,0,0,1) 75%),url("https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/extreme-e/hero-banner-arrowmclaren-march6-patooward-1600x900-v2.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.44em;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.hero::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+#carHero {
+    background-image: linear-gradient(rgba(0,0,0,0) 25%, rgba(255,136,0,1) 75%),url("https://cloudfront-us-east-2.images.arcpublishing.com/reuters/KBAYBPXU4FO6RFWKH3RTTJCYLQ.jpg");
+    color: #111;
+}

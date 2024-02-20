@@ -1,0 +1,24 @@
+footer {
+    width: 100vw;
+    height: 10vh;
+
+    background-color: #111;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    * {
+        padding-left: 2vw;
+        color: white;
+    }
+
+    p {
+        height: 1vh;
+    }
+
+    img {
+        height: 7vh;
+        filter: invert(1);
+    }
+}
